@@ -18,11 +18,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'^login/', include('qa.urls')),
-    path(r'^$', include('qa.urls')),
-    path(r'^signup/', include('qa.urls')),
-    path(r'^question/<id>/', include('qa.urls')),
-    path(r'^ask/', include('qa.urls')),
-    path(r'^popular/', include('qa.urls')),
-    path(r'^new/', include('qa.urls'))
+    path(r'^login/', include('ask.qa.urls')),
+    path(r'^$', include('ask.qa.urls')),
+    path(r'^signup/', include('ask.qa.urls')),
+    path(r'^question/<id>/', include('ask.qa.urls')),
+    path(r'^ask/', include('ask.qa.urls')),
+    path(r'^popular/', include('ask.qa.urls')),
+    path(r'^new/', include('ask.qa.urls'))
 ]
