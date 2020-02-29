@@ -20,9 +20,10 @@ from ask.qa.views import test
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('/', test),
+    path('', test),
     path('login/', test),
     path('signup/', test),
-    path('question/<int:id>', test),
+    path('question/<int:id>/', test),
     path('ask/', test),
     path('popular/', test),
     path('new/', test),
