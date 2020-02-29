@@ -1,0 +1,5 @@
+settings.py:
+Roor_urlconf = 'ask.ask.urls'
+instaled_apps = 'ask.qa'
+ask/urls:
+from ask.qa.views import test
