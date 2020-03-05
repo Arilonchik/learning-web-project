@@ -1,5 +1,0 @@
-mode='wsgi'
-python= '/usr/bin/python3'
-working_dir= '/home/box/web/ask'
-bind='0.0.0.0:8000'
-log-level='debug'

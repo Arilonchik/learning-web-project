@@ -81,13 +81,15 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': '/home/box/web/ask/ask/my.cnf',
-        },
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'djbase',
+            'USER': 'django',
+            'PASSWORD': 'pass123',
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+        }
     }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
